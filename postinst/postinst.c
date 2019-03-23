@@ -43,5 +43,6 @@ int main(int argc, const char **argv) {
     #ifdef POSTINST
         run_launchctl(ASU_INJECT_PLIST_PATH, "load");
     #endif
+    printf("finish:restart");
     return 0;
 }
