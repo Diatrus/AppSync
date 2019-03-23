@@ -1,4 +1,6 @@
 Conflicts: us.hackulo.appsync50, us.hackulo.appsync50plus, com.hackyouriphone.appsync7, com.teiron.ppsync, appsync50plus2.25pp, com.linusyang.appsync, com.sull.appsyncunified, com.sull.appsyncunifiedbeta, com.xsellize.appsync50, com.xsellize.appsync50plus, appsync50plus.178, appsync50plus2.178
+Pre-Depends: cy+model.appletv
+Depends: firmware (>= 9.0), mobilesubstrate
 Maintainer: Diatrus
 Provides: appsync
 Replaces: us.hackulo.appsync50
