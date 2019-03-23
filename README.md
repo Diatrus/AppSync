@@ -1,9 +1,9 @@
 # AppSync Unified
-###### Unified AppSync dynamic library for iOS 5, 6, 7, 8, 9, 10, 11, and 12.
+###### Unified AppSync dynamic library for tvOS 9, 10, 11, and 12.
 
 What is AppSync Unified?
 ------------------------
-AppSync Unified is a tweak that patches `installd` to allow for the installation of unsigned, fakesigned, or ad-hoc signed IPA packages on an iOS device.
+AppSync Unified is a tweak that patches `installd` to allow for the installation of unsigned, fakesigned, or ad-hoc signed IPA packages on an iOS device. This is the version ported to tvOS by Diatrus.
 
 AppSync Unified can be used to downgrade or clone installed apps, to download fakesigned IPAs (often emulators), and also to assist in the development of iOS applications using Xcode.
 
@@ -13,9 +13,9 @@ AppSync Unified can be used to downgrade or clone installed apps, to download fa
 
 Official Cydia Repository
 -------------------------
-You can find AppSync Unified at **Karen's Repo: https://cydia.angelxwind.net/** ([depiction page](https://cydia.angelxwind.net/?page/net.angelxwind.appsyncunified))
+You can find AppSync Unified at **Diatrus' Repo: https://diatrus.github.io/appsync**
 
-If you do not see AppSync Unified in Karen's Repo, then that just means you have another repository added that is also hosting an identical copy of AppSync Unified. Please only use the official unmodified release for your own safety — third-party modifications can and _have_ caused damage to iOS installations.
+If you do not see AppSync Unified in Diatrus' Repo, then that just means you have another repository added that is also hosting an identical copy of AppSync Unified. Please only use the official unmodified release for your own safety — third-party modifications can and _have_ caused damage to iOS installations.
 
 How does it work?
 -----------------
@@ -32,7 +32,7 @@ I explain the problem with AppSync Unified and iOS piracy rather thoroughly [in 
 How do I compile AppSync Unified?
 ---------------------------------
 ```
-git clone https://github.com/angelXwind/AppSync.git
+git clone https://github.com/Diatrus/AppSync.git
 cd AppSync
 make
 make package #requires dpkg, install using Homebrew - see http://brew.sh/

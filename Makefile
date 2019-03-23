@@ -1,5 +1,9 @@
-TARGET =: clang::5.0
-ARCHS = armv7 armv7s arm64
+ARCHS = arm64
+TARGET = appletv
+export GO_EASY_ON_ME=1
+export SDKVERSION=10.1
+TARGET = appletv:clang:10.1:10.1
+SYSROOT = $(THEOS)/sdks/AppleTVOS10.1.sdk
 DEBUG = 0
 
 THEOS_PACKAGE_DIR_NAME = debs
@@ -9,13 +13,9 @@ include $(THEOS)/makefiles/common.mk
 
 SUBPROJECTS += AppSyncUnified
 SUBPROJECTS += postinst
+SUBPROJECTS += preinst
 SUBPROJECTS += asu_inject
 include $(THEOS_MAKE_PATH)/aggregate.mk
-
-package::
-	@$(_THEOS_PLATFORM_DPKG_DEB) -b -Zgzip transitional/nodelete-net.angelxwind.appsync70plus debs/net.angelxwind.appsync70plus.deb
-	@$(_THEOS_PLATFORM_DPKG_DEB) -b -Zgzip transitional/nodelete-net.angelxwind.appsync60plus debs/net.angelxwind.appsync60plus.deb
-	@$(_THEOS_PLATFORM_DPKG_DEB) -b -Zgzip transitional/nodelete-net.angelxwind.appsync50plus debs/net.angelxwind.appsync50plus.deb
 
 clean::
 	@rm -f debs/*.deb

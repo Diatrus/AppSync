@@ -6,15 +6,15 @@ TARGET = appletv:clang:10.1:10.1
 SYSROOT = $(THEOS)/sdks/AppleTVOS10.1.sdk
 include $(THEOS)/makefiles/common.mk
 
-TOOL_NAME = postinst prerm
+TOOL_NAME = preinst prerm
 
-postinst_FILES = postinst.c
-postinst_CFLAGS += -fvisibility=hidden -DPOSTINST
-postinst_FRAMEWORKS = CoreFoundation
-postinst_INSTALL_PATH = /DEBIAN
-postinst_CODESIGN_FLAGS = -S../entitlements.xml
+preinst_FILES = preinst.c
+preinst_CFLAGS += -fvisibility=hidden -Dpreinst
+preinst_FRAMEWORKS = CoreFoundation
+preinst_INSTALL_PATH = /DEBIAN
+preinst_CODESIGN_FLAGS = -S../entitlements.xml
 
-prerm_FILES = postinst.c
+prerm_FILES = preinst.c
 prerm_CFLAGS += -fvisibility=hidden
 prerm_FRAMEWORKS = CoreFoundation
 prerm_INSTALL_PATH = /DEBIAN

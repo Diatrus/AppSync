@@ -10,7 +10,7 @@
 #include <spawn.h>
 #include <assert.h>
 
-#define DPKG_PATH "/var/lib/dpkg/info/net.angelxwind.appsyncunified.list"
+#define DPKG_PATH "/var/lib/dpkg/info/us.diatr.appsyncunified.list"
 
 extern char ***_NSGetEnviron(void);
 extern int proc_listallpids(void *, int);
@@ -81,10 +81,10 @@ static void inject_dylib(const char *name, pid_t pid, const char *dylib) {
 
 int main(int argc, char *argv[]) {
 	printf("asu_inject for AppSync Unified\n");
-	printf("Copyright (C) 2014-2019 Karen/あけみ (angelXwind)\n");
+	printf("Copyright (C) 2014-2019 Karen (angelXwind)\n");
 	if (access(DPKG_PATH, F_OK) == -1) {
-		printf("You seem to have installed AppSync Unified from an APT repository that is not cydia.angelxwind.net (package ID net.angelxwind.appsyncunified).\n");
-		printf("If someone other than Karen/あけみ (angelXwind) is taking credit for the development of this tool, they are likely lying.\n");
+		printf("You seem to have installed AppSync Unified from an APT repository that is not diatrus.github.io/appsync (package ID us.diatr.appsyncunified).\n");
+		printf("If someone other than Linus Yang (laokongzi), Karen (angelXwind), or Diatrus is taking credit for the development of this tool, they are likely lying.\n");
 		printf("Please only download AppSync Unified from the official repository to ensure file integrity and reliability.\n");
 	}
 	if (geteuid() != 0) {
