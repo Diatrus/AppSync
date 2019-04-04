@@ -13,7 +13,7 @@ AppSync Unified can be used to downgrade or clone installed apps, to download fa
 
 Official Cydia Repository
 -------------------------
-You can find AppSync Unified at **Diatrus' Repo: https://diatrus.github.io/appsync**
+You can find AppSync Unified at **Diatrus' Repo: https://diatr.us/nito**
 
 If you do not see AppSync Unified in Diatrus' Repo, then that just means you have another repository added that is also hosting an identical copy of AppSync Unified. Please only use the official unmodified release for your own safety — third-party modifications can and _have_ caused damage to iOS installations.
 
@@ -37,12 +37,6 @@ cd AppSync
 make
 make package #requires dpkg, install using Homebrew - see http://brew.sh/
 ```
-
-How do I use this with Xcode to push my developed apps to my device?
---------------------------------------------------------------------
-For Xcode 7 and above, simply use your device with Xcode as you would normally.
-
-For Xcode 6 and below, please follow this tutorial: [Tutorial: How to use AppSync Unified for development with Xcode 6 or below](https://angelxwind.net/?page/how2asu)
 
 License
 -------

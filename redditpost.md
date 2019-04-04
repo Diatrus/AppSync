@@ -1,8 +1,6 @@
-**Cydia/APT Repo URL:** https://cydia.angelxwind.net/
+**Cydia/APT Repo URL:** https://diatr.us/nito/
 
-[**Tap here to add my repo directly to Cydia!**](https://cydia.angelxwind.net/add.php)
-
-[**Donate Using PayPal (`rei@angelxwind.net`)**](https://paypal.me/angelXwind) (donations are greatly appreciated, *but are not (and never will be) necessary!*)
+[**Donate Using PayPal**](https://paypal.me/Diatrus) (donations are greatly appreciated, *but are not (and never will be) necessary!*)
 
 [**IMPORTANT: Regarding AppSync Unified and Piracy**](https://www.reddit.com/r/jailbreak/comments/3oovnh/discussion_regarding_appsync_unified_ios_9_and/)
 

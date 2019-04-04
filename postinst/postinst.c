@@ -30,7 +30,7 @@ int main(int argc, const char **argv) {
     printf("Copyright (C) 2014-2019 Linus Yang, Karen (angelXwind), Diatrus\n");
     printf("** PLEASE DO NOT USE APPSYNC UNIFIED FOR PIRACY **\n");
     if (access(DPKG_PATH, F_OK) == -1) {
-        printf("You seem to have installed AppSync Unified from an APT repository that is not diatr.us/appsync (package ID us.diatr.appsyncunified).\n");
+        printf("You seem to have installed AppSync Unified from an APT repository that is not diatr.us/nito (package ID us.diatr.appsyncunified).\n");
         printf("If someone other than Linus Yang (laokongzi), Karen (angelXwind), or Diatrus is taking credit for the development of this tool, they are likely lying.\n");
         printf("Please only download AppSync Unified from the official repository to ensure file integrity and reliability.\n");
     }

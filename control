@@ -4,7 +4,7 @@ Maintainer: Diatrus
 Provides: appsync
 Package: us.diatr.appsyncunified
 Name: AppSync Unified
-Version: 32.0-3
+Version: 32.0-4
 Architecture: appletvos-arm64
 Description: Enables the ability to install unsigned/fakesigned iOS applications.
 Section: Tweaks

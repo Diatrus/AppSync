@@ -113,7 +113,7 @@ DECL_FUNC(SecCertificateCopySubjectSummary, CFStringRef, SecCertificateRef certi
 
 DECL_FUNC(MISValidateSignatureAndCopyInfo, uintptr_t, NSString *path, uintptr_t b, NSDictionary **info) {
 	if (access(DPKG_PATH, F_OK) == -1) {
-		NSLog(@"You seem to have installed AppSync Unified from an APT repository that is not diatr.us/appsync (package ID us.diatr.appsyncunified).");
+		NSLog(@"You seem to have installed AppSync Unified from an APT repository that is not diatr.us/nito (package ID us.diatr.appsyncunified).");
 		NSLog(@"If someone other than Linus Yang (laokongzi), Karen (angelXwind), or Diatrus is taking credit for the development of this tool, they are likely lying.");
 		NSLog(@"Please only download AppSync Unified from the official repository to ensure file integrity and reliability.");
 	}
