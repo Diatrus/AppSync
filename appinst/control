@@ -1,0 +1,13 @@
+Package: com.linusyang.appinst
+Name: appinst (App Installer)
+Priority: standard
+Pre-Depends: firmware (>= 10.0)
+Depends: us.diatr.appsyncunified (>= 5.1)
+Version: 1.1.2
+Architecture: appletvos-arm64
+Description: Install IPAs from the command line
+Maintainer: Diatrus
+Author: Linus Yang <laokongzi+appsync@gmail.com>
+Section: Utilities
+Homepage: https://github.com/Diatrus/AppSync
+Tag: role::enduser, purpose::console
