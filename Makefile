@@ -12,7 +12,6 @@ include $(THEOS)/makefiles/common.mk
 
 SUBPROJECTS += AppSyncUnified
 SUBPROJECTS += postinst
-SUBPROJECTS += preinst
 include $(THEOS_MAKE_PATH)/aggregate.mk
 
 clean::
