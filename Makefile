@@ -3,7 +3,8 @@ export TARGET = appletv:clang:10.1:10.1
 # export GO_EASY_ON_ME = 1
 # export SDKVERSION = 10.1
 export SYSROOT = $(THEOS)/sdks/AppleTVOS10.1.sdk
-export THEOS_DEVICE_IP = 192.168.1.138
+export LOCAL_INSTALL_PATH = /usr/lib/TweakInject
+export THEOS_DEVICE_IP = 192.168.1.137
 export FINALPACKAGE=1
 
 # THEOS_PACKAGE_DIR_NAME = debs
