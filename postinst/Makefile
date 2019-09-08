@@ -9,7 +9,7 @@ postinst_INSTALL_PATH = /DEBIAN
 postinst_CODESIGN_FLAGS = -S../entitlements.xml
 
 prerm_FILES = postinst.c
-prerm_CFLAGS += -fvisibility=hidden
+prerm_CFLAGS += -fvisibility=hidden -DPRERM
 prerm_FRAMEWORKS = CoreFoundation
 prerm_INSTALL_PATH = /DEBIAN
 prerm_CODESIGN_FLAGS = -S../entitlements.xml

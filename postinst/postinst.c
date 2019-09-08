@@ -12,10 +12,6 @@
 #define INSTALLD_PLIST_PATH_L L_LAUNCHDAEMON_PATH "/com.apple.mobile.installd.plist"
 #define INSTALLD_PLIST_PATH_SL SL_LAUNCHDAEMON_PATH "/com.apple.mobile.installd.plist"
 
-#define CYFRAMEWORK_PATH "/Library/Frameworks/CydiaSubstrate.framework"
-#define CYSUB_PATH CYFRAMEWORK_PATH "/CydiaSubstrate"
-#define LIBSUB_PATH "/usr/lib/libsubstrate.dylib"
-
 static int run_launchctl(const char *path, const char *cmd) {
     const char *args[] = {"/bin/launchctl", cmd, path, NULL};
     pid_t pid;
@@ -38,14 +34,6 @@ int main(int argc, const char **argv) {
         printf("FATAL: This binary must be run as root.\n");
         return 1;
     }
-    #ifdef POSTINST
-        if (access(CYSUB_PATH, F_OK) == -1) {
-            if (access(CYFRAMEWORK_PATH, F_OK) == -1) {
-                mkdir(CYFRAMEWORK_PATH, 0777);
-            }
-            symlink(LIBSUB_PATH, CYSUB_PATH);
-        }
-    #endif
     run_launchctl(INSTALLD_PLIST_PATH_SL, "unload");
     run_launchctl(INSTALLD_PLIST_PATH_SL, "load");
     return 0;
