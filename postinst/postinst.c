@@ -13,7 +13,7 @@
 #define INSTALLD_PLIST_PATH_SL SL_LAUNCHDAEMON_PATH "/com.apple.mobile.installd.plist"
 
 static int run_launchctl(const char *path, const char *cmd) {
-    const char *args[] = {"/bin/launchctl", cmd, path, NULL};
+    const char *args[] = {(access("/sbin/launchctl", X_OK) != -1) ? "/sbin/launchctl" : "/bin/launchctl", cmd, path, NULL};
     pid_t pid;
     int stat;
     posix_spawn(&pid, args[0], NULL, NULL, (char **) args, NULL);
